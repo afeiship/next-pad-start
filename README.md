@@ -8,5 +8,8 @@ npm install -S afeiship/next-pad-start --registry=https://registry.npm.taobao.or
 
 ## usage
 ```js
-//DOCS here!
+import nxPadStart from 'next-pad-start';
+
+nxPadStart(123,5,'0')
+// 00123
 ```
