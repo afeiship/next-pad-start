@@ -1,6 +1,7 @@
 {
   "name": "next-pad-start",
-  "description": "Pad start for next.",
+  "version": "0.0.1",
+  "description": "Pad start for next",
   "main": "dist/next-pad-start.js",
   "authors": [
     "afei"
@@ -19,6 +20,7 @@
     "bower_components",
     "test",
     "tests",
+    "build",
     "src",
     "gulp",
     "gulpfile.js"

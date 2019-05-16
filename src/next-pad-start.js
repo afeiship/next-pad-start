@@ -1,6 +1,5 @@
-(function () {
-
-  var global = global || window || self || this;
+(function() {
+  var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
 
   /*
@@ -8,7 +7,7 @@
   https://github.com/stevemao/left-pad
   */
 
-  nx.padStart = function(str,len,ch){
+  nx.padStart = function(str, len, ch) {
     // convert `str` to `string`
     str = str + '';
     // `len` is the `pad`'s length now
@@ -38,9 +37,7 @@
     return pad + str;
   };
 
-
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = nx.padStart;
   }
-
-}());
+})();
