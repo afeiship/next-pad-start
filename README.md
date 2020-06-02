@@ -1,15 +1,22 @@
 # next-pad-start
-> Pad start for next
+> Pad start for next.
 
 ## installation
 ```bash
-npm install -S afeiship/next-pad-start --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-pad-start
 ```
 
 ## usage
 ```js
-import nxPadStart from 'next-pad-start';
+import '@feizheng/next-pad-start';
 
-nxPadStart(123,5,'0')
-// 00123
+//DOCS here!
+```
+
+## simple solution
+```js
+('0' + 1).slice(-2)
+// "01"
+('0' + 12).slice(-2)
+// "12"
 ```

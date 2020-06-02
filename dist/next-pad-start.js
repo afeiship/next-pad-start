@@ -1,20 +1,22 @@
 /*!
- * name: next-pad-start
- * link: https://github.com/afeiship/next-pad-start
+ * name: @feizheng/next-pad-start
+ * description: Pad start for next.
+ * homepage: https://github.com/afeiship/next-pad-start
  * version: 1.0.0
+ * date: 2020-06-02T05:09:21.678Z
  * license: MIT
  */
 
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+  var nx = global.nx || require('@feizheng/next-js-core2');
 
   /*
   @thanks to:
   https://github.com/stevemao/left-pad
   */
 
-  nx.padStart = function(str, len, ch) {
+  nx.padStart = function (str, len, ch) {
     // convert `str` to `string`
     str = str + '';
     // `len` is the `pad`'s length now
@@ -48,3 +50,5 @@
     module.exports = nx.padStart;
   }
 })();
+
+//# sourceMappingURL=next-pad-start.js.map
